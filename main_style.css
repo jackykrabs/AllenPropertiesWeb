@@ -3,6 +3,7 @@ body {
     margin: auto;
 }
 .textContainer, .header {
+    display: block;
     padding: 5px;
     margin: auto;
     margin-bottom: 20px;
@@ -69,5 +70,29 @@ body {
     padding: 10px;
 }
 #properties tr, td, th, table {
+    border: 2px solid black;
+}
+.infoWrapper {
+    display: block;
+    text-align: center;
+    width: 268px;
+    margin: auto;
+}
+.otherInfoContainer {
+    float: left;
+    background-color: white;
+    border: 2px solid black;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    width: 120px;
+    text-align: center;
+}
+.propImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
     border: 2px solid black;
 }

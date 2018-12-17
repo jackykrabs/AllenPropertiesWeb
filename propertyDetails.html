@@ -15,8 +15,22 @@
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
         <div class="header" id="propName"><h1>Property Details</h1></div>
+        <img class="propImg "src="images/home_placeholder.png" alt="home_placeholder" width=300px height=300px>
         <div class="textContainer" id="description">Ram Ranch Really Rocks!</div>
         <div class="header" id="otherInfoHeader"><h1>Other Information</h1></div>
+        <div class="infoWrapper">
+            <div class="otherInfoContainer">
+                <h3>Bedrooms</h3>
+                <img src="images/bed.png" alt="bed" width=60px height=60px>
+                <div id="bedRooms"></div>
+            </div>
+            <div class="otherInfoContainer">
+                <h3>Bathrooms</h3>
+                <img src="images/toilet.png" alt="bath" width=60px height=60px>
+                <div id="bathRooms"></div>
+            </div>
+        </div>
+        <br>
         <script>
           // Initialize Firebase
           var config = {
@@ -43,6 +57,9 @@
             function setupPage(information) {
                 $("#propName").html("<h1>"+information.name+"</h1>");
                 $("#description").html("<h2>Description</h2><br><p>" + information.description + "</p>");
+                $("#bedRooms").html("<h3>" + information.bed + "</h3>");
+                $("#bathRooms").html("<h3>" + information.bath + "</h3>");
+                //TODO: Get images of front of all 4 types of properties (radcliffe, williamsburg, southampton, morning glory) and set the propImage to the proper image
             }
         </script>
     </body>
