@@ -10,11 +10,19 @@ body {
     background-color: white;
     border: 2px solid black;
 }
+.textContainer h2 {
+    text-align: left;
+    font-size: 20px;
+}
 .header {
     margin-top: 60px;
     text-align: center;
     width: 35%;
     font-size: 14px;
+}
+#otherInformation {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .navbar {
     text-align: center;
@@ -41,7 +49,25 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .navbar li a:hover {
     background-color: #111;
+}
+#properties {
+    font-size: 20px;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+    width: 75%;
+}
+#description {
+    width: 60%;
+}
+#properties tr:hover {
+    background-color: lightblue;
+}
+#properties td{
+    padding: 10px;
+}
+#properties tr, td, th, table {
+    border: 2px solid black;
 }
