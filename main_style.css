@@ -72,6 +72,19 @@ body {
 #properties tr, td, th, table {
     border: 2px solid black;
 }
+#workOrderForm, #applicationContainer {
+    height: 300px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 5px;
+}
+#applicationContainer{
+    height: 1500px;
+}
 .infoWrapper {
     display: block;
     text-align: center;

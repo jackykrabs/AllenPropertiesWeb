@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main_style.css" >
+        <title>Allen Properties - Rental Application</title>
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="listings.php">Listings</a></li>
+            <li><a class="active" href="tenants.php">Tenants</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+        <div class="header">
+            <h1>Rental Application</h1>
+        </div>
+        <div class="textContainer"><p>Please fill this form out in its entirety for consideration to be a tenant.  Any false statements will result in the automatic rejection of your application. 
+            Thank you for your interest in our rental units.</p></div>
+        <div id="applicationContainer">
+            <form id="rentalApplication">
+                <!--General Information-->
+                <h3>General Information</h3>
+                <label for="applFullName">Applicant Full Name (First Middle Last): </label>
+                <input type="text" name="applFullName"><br>
+                <label for="applDOB">Applicant Date of Birth: </label>
+                <input type="date" name="applDOB"><br>
+                <label for="applDL">Applicant Drivers License Number and State (Example: 12345678/MO): </label>
+                <input type="text" name="applDL"><br>
+                <label for="coApplFullName">Co-Applicant Full Name (First Middle Last): </label>
+                <input type="text" name="coApplFullName"><br>
+                <label for="coApplDOB">Co-Applicant Date of Birth: </label>
+                <input type="date" name="coApplDOB"><br>
+                <label for="coApplDL">Co-Applicant Drivers License Number and State (Example: 12345678/MO): </label>
+                <input type="text" name="coApplDL"><br>
+                <label for="otherResidents">Please list all other residents, their Date of Birth, and their relation to you: </label>
+                <textarea name="otherResidents" form="rentalApplication" placeholder="Example: Jane Doe, 01/01/1990, Daughter;" rows=3 cols=30></textarea><br>
+                <label for="howLearn">How did you learn about our properties? </label><br>
+                <textarea name="howLearn" form="rentalApplication" rows=3 cols=30></textarea><br>
+                
+                <!--Applicant Current Living Info-->
+                <h3>Applicant Current Living Information</h3>
+                <label for="applCurrentAddress">Applicant Current Address: </label>
+                <input type="text" name="applCurrentAddress" placeholder="Example: 123 Sesame Street, Columbia MO, 65203" size="43"><br>
+                <label for="applHomePhone">Applicant Home Phone #: </label>
+                <input type="text" name="applHomePhone"><br>
+                <label for="applCellPhone">Applicant Cell Phone #: </label>
+                <input type="text" name="applCellPhone"><br>
+                <label for="applCurrentAddrStartDate">Applicant Current Address Start Date: </label>
+                <input type="date" name="applCurrentAddrStartDate"><br>
+                <label for="applCurrentLL">Applicant Current Landlord: </label>
+                <input type="text" name="applCurrentLL"><br>
+                <label for="applLLPhone">Landlord Phone #: </label>
+                <input type="text" name="applLLPhone"><br>
+                <label for="applCurrentPayment">Applicant Current Monthly Payment: $</label>
+                <input type="number" name="applCurrentPayment"><br>
+                <label for="applReasonForMoving">Applicant Reason for Moving: </label><br>
+                <textarea form="rentalApplication" name="applReasonForMoving" rows=3 cols=30></textarea><br>
+                
+                <!--Applicant Previous Living Info-->
+                <h3>Applicant Previous Living Information</h3>
+                <label for="applPastAddress">Applicant Previous Address: </label>
+                <input type="text" name="applPastAddress" placeholder="Example: 123 Sesame Street, Columbia MO, 65203" size="43"><br>
+                <label for="applPastAddrStartDate">Applicant Previous Address Start Date: </label>
+                <input type="date" name="applPastAddrStartDate"><br>
+                <label for="applPastAddrEndDate">Applicant Previous Address End Date: </label>
+                <input type="date" name="applPastAddrEndDate"><br>
+                <label for="applPastLL">Applicant Previous Landlord: </label>
+                <input type="text" name="applPastLL"><br>
+                <label for="applPastLLPhone">Landlord Phone #: </label>
+                <input type="text" name="applPastLLPhone"><br>
+                <label for="applPastPayment">Applicant Previous Monthly Payment: $</label>
+                <input type="number" name="applPastPayment"><br>
+                <label for="applPastReasonForMoving">Applicant Reason for Moving: </label><br>
+                <textarea form="rentalApplication" name="applPastReasonForMoving" rows=3 cols=30></textarea><br>
+                
+                <!--Co-Applicant Current Living Info-->
+                <h3>Co-Applicant Current Living Information</h3>
+                <label for="coApplCurrentAddress">Co-Applicant Current Address: </label>
+                <input type="text" name="coApplCurrentAddress" placeholder="Example: 123 Sesame Street, Columbia MO, 65203" size="43"><br>
+                <label for="coApplHomePhone">Co-Applicant Home Phone #: </label>
+                <input type="text" name="coApplHomePhone"><br>
+                <label for="coApplCellPhone">Co-Applicant Cell Phone #: </label>
+                <input type="text" name="coApplCellPhone"><br>
+                <label for="coApplCurrentAddrStartDate">Co-Applicant Current Address Start Date: </label>
+                <input type="date" name="coApplCurrentAddrStartDate"><br>
+                <label for="coApplCurrentLL">Co-Applicant Current Landlord: </label>
+                <input type="text" name="coApplCurrentLL"><br>
+                <label for="coApplLLPhone">Landlord Phone #: </label>
+                <input type="text" name="coApplLLPhone"><br>
+                <label for="coApplCurrentPayment">Co-Applicant Current Monthly Payment: $</label>
+                <input type="number" name="coApplCurrentPayment"><br>
+                <label for="coApplReasonForMoving">Co-Applicant Reason for Moving: </label><br>
+                <textarea form="rentalApplication" name="coApplReasonForMoving" rows=3 cols=30></textarea><br>
+                
+                <!--Co-Applicant Previous Living Info-->
+                <h3>Co-Applicant Previous Living Information</h3>
+                <label for="coApplPastAddress">Co-Applicant Previous Address: </label>
+                <input type="text" name="coApplPastAddress" placeholder="Example: 123 Sesame Street, Columbia MO, 65203" size="43"><br>
+                <label for="coApplPastAddrStartDate">Co-Applicant Previous Address Start Date: </label>
+                <input type="date" name="coApplPastAddrStartDate"><br>
+                <label for="coApplPastAddrEndDate">Co-Applicant Previous Address End Date: </label>
+                <input type="date" name="coApplPastAddrEndDate"><br>
+                <label for="coApplPastLL">Co-Applicant Previous Landlord: </label>
+                <input type="text" name="coApplPastLL"><br>
+                <label for="coApplPastLLPhone">Co-Landlord Phone #: </label>
+                <input type="text" name="coApplPastLLPhone"><br>
+                <label for="coApplPastPayment">Co-Applicant Previous Monthly Payment: $</label>
+                <input type="number" name="coApplPastPayment"><br>
+                <label for="coApplPastReasonForMoving">Co-Applicant Reason for Moving: </label><br>
+                <textarea form="rentalApplication" name="coAapplPastReasonForMoving" rows=3 cols=30></textarea><br>
+            </form>
+        </div>
+    </body>
+</html>
